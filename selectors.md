@@ -8,34 +8,34 @@ p{
 }
 ```
 
-- Every element with the class of "highlight"
+- Every element with the class of "el"
 
 ```
-.highlight{
+.el{
   outline:1px solid red;
 }
 ```
 
-- Every paragraph with the class of "highlight"
+- Every paragraph with the class of "el"
 
 ```
-p.highlight{
+p.el{
   outline:1px solid red;
 }
 ```
 
-- Every element with the class of "highlight" that's inside a paragraph
+- Every element with the class of "el" that's inside a paragraph
 
 ```
-p .highlight{
+p .el{
   outline:1px solid red;
 }
 ```
 
-- Every paragraph that's inside an element with the class of "highlight"
+- Every paragraph that's inside an element with the class of "el"
 
 ```
-.highlight p{
+.el p{
   outline:1px solid red;
 }
 ```
@@ -101,7 +101,7 @@ a:active:after{
 - Every odd-numbered paragraph in a section
 
 ```
-section p:nth-child(2n+1){
+section p:nth-of-type(2n+1){
   outline:1px solid red;
 }
 ```
@@ -109,7 +109,7 @@ section p:nth-child(2n+1){
 - Every even-numbered paragraph in a section
 
 ```
-section p:nth-child(2n){
+section p:nth-of-type(2n){
   outline:1px solid red;
 }
 ```
